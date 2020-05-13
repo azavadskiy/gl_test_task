@@ -11,5 +11,5 @@ Build steps:
 
 # Second job:
 - 1.Clone repo from https://github.com/gnokoheat/elk-with-filebeat-by-docker-compose.git
-- 2.Use docker-compouse plugin to deploy ELK stack and Filebeat
+- 2.Use docker-compose plugin in jenkins job to deploy ELK stack and Filebeat
 
