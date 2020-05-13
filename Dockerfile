@@ -1,3 +1,3 @@
 FROM nginx:alpine
 COPY static-html /usr/share/nginx/html
-VOLUME /var/log/nginx/log
+VOLUME /usr/share/filebeat/mylog/
