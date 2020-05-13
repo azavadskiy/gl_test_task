@@ -36,6 +36,7 @@ pipeline {
     stage('Deploy services') {
       steps{
             sh "docker run -d -p 80:80 $registry:latest"
+            sh "docker run -d --volumes-from nginx -v "/Users/azav/gl_test_task/filebeat.yml:/etc/filebeat/filebeat.yml" olinicola/filebeat"
         }
       }
     }
